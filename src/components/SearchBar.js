@@ -20,7 +20,7 @@ const SearchBar = ({ totalPrograms, programs, setPrograms, isLoading }) => {
             );
         }
         else {
-            setPrograms(totalPrograms);
+            handleClick();
         }
     }
 
