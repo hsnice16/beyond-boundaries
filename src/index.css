@@ -1,13 +1,382 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+:root {
+    --light-primary-color: #F87171;
+    --primary-color: #EF4444;
+    --dark-primary-color: #B91C1C;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+    --light-green-cyan: #6EE7B7;
+    --strong-green-cyan: #059669;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+    background-color: var(--off-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.h1-sorry {
+  text-align: center;
+  color:var(--dark-gray);
+}
+
+.user-agent {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.min-h-80 {
+  min-height: 80vh;
+}
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.h-shadow {
+  box-shadow: 0 1px 10px var(--dark-gray);
+}
+
+/* header searchBar */
+
+.header-sb {
+  position: sticky;
+  top: 0;
+}
+
+form {
+  text-align: center;
+}
+
+.type-search {
+  border-radius: 1rem;
+  background-color: white;
+  margin: auto;
+  width: 18rem;
+}
+
+.icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+input[type="search"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  outline: none;
+}
+
+input[type="search"] {
+  width: 80%;
+  height: 100%;
+}
+
+input[type="search"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.checkbox-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  flex-direction: column;
+  padding-left: 25%;
+}
+
+label {
+  color:var(--off-white);
+  font-size: 0.8rem;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 1rem;
+  padding: .5rem;
+  width: 20rem;
+  height: 18rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px var(--dark-gray);
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 12px 5px var(--dark-gray);
+}
+
+.p-name {
+  color: var(--dark-gray)
+}
+
+.p-category {
+  margin-top: .5rem;
+}
+
+.p-phase {
+  background-color: var(--light-green-cyan);
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  color: var(--strong-green-cyan);
+}
+
+.p-description {
+  text-align: left;
+  margin-top: .5rem;
+  word-wrap: break-word;
+}
+
+.date-duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  padding: 0.5rem;
+  flex-wrap: wrap;    
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-button {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  padding: .5rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  background-color: var(--dark-primary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.card-button:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.card-button:focus {
+  outline: none;
+}
+
+.angled-icon {
+  animation-name: change-position;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes change-position {
+  50% {
+    padding: 2px;
+  }
+}
+
+/* program details header */
+
+.go-back-icon {
+  border: 4px double var(--off-white);
+  padding: 2px;
+  cursor: pointer;
+  font-size: 35px;
+  border-radius: 50%;
+}
+
+.go-back-icon:hover {
+  background-color: var(--dark-primary-color);
+}
+
+.header-pd {
+  color: var(--off-white);
+}
+
+.header-pd h1 {  
+  text-align: center;
+}
+
+.header-pd ul {
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.header-pd ul li {
+  padding: .5rem;
+}
+
+.header-pd ul li span {
+  color: var(--light-green-cyan);
+}
+
+.h1-list {
+  margin-top: .5rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--dark-primary-color);
+}
+
+/* mentor card */
+.mentor-card {
+  height: auto;
+  cursor: pointer;
+}
+
+.mentor-spec {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+  margin: 2px;
+}
+
+/* dialog */
+
+.dialog-container {
+  position: fixed;
+  top: 2%;
+  box-shadow: 2px 2px 12px 5px var(--dark-gray);
+  cursor: auto;
+  width: 22rem;
+}
+
+.cross-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: var(--dark-primary-color);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.dialog-body span {
+  color: var(--dark-primary-color)
+}
+
+.dialog-subbody {
+  margin-top: 1rem;
+  padding: .2rem 1rem;
+  text-align: left;
+}
+
+.working-hours {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.m-top {
+  margin-top: .5rem;
+}
+
+@media only screen and (max-width: 520px) {
+  .dialog-container {
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dialog-container {
+    left: 1%;
+  }
+}
+
+@media only screen and (min-width: 520px) {
+  .dialog-container {
+    position: fixed;
+    top: 0;
+    left: 25%;
+  }
+
+  .dialog-subbody {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .m-top {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .dialog-container {
+    left: 35%;
+  }
+}
+
+@media only screen and (min-width:450px) {
+  .type-search {
+    width: 25rem;
+  }
+}
+
+@media only screen and (min-width:700px) {
+
+  .header-sb {
+    padding: 3rem;
+  }
+
+  .checkbox-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .card-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .go-back-icon {
+    margin-left: 2rem;
+  }
 }
