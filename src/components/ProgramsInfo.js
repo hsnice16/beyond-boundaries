@@ -1,7 +1,7 @@
 import React from 'react';
 import ProgramCards from './ProgramCards';
 
-const ProgramsInfo = ({ loading, programs }) => {
+const ProgramsInfo = ({ programs }) => {
     return (
         <main className="min-h-80">
             <section className="card-container">
