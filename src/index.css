@@ -313,6 +313,17 @@ label {
   margin-top: .5rem;
 }
 
+@media only screen and (min-width: 400px) {
+  .dialog-subbody {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .m-top {
+    margin-top: 0;
+  }
+} 
+
 @media only screen and (max-width: 520px) {
   .dialog-container {
     left: 10%;
@@ -330,15 +341,6 @@ label {
     position: fixed;
     top: 0;
     left: 25%;
-  }
-
-  .dialog-subbody {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  .m-top {
-    margin-top: 0;
   }
 }
 
