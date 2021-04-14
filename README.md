@@ -1,5 +1,7 @@
 ## beyond-boundaries
 
+![working_video_gif](\src\assets\working_video.gif)
+
 ### post
 
 [linkedIn](https://www.linkedin.com/posts/hsnice16_webapp-reactjs-css-activity-6786530042907287553-3fP4)
