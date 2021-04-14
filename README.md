@@ -1,6 +1,6 @@
 ## beyond-boundaries
 
-![working_video_gif](\src\assets\working_video.gif)
+![working_video_gif](/src/assets/working_video.gif)
 
 ### post
 
